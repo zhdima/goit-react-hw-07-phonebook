@@ -70,3 +70,11 @@ export const Button = styled.button`
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 `;
+
+export const ErrorInfo = styled.p`
+  text-align: left;
+  color: tomato;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+`;

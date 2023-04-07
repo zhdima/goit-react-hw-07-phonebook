@@ -1,10 +1,10 @@
 import { FilterWrap } from './Filter.styled';
 import { useSelector, useDispatch } from "react-redux";
-import { getNameFilter } from "../../redux/selectors";
+import { selectNameFilter } from "../../redux/selectors";
 import { setNameFilter } from "../../redux/filtersSlice";
 
 export const Filter = () => {
-  const nameFilter = useSelector(getNameFilter);
+  const nameFilter = useSelector(selectNameFilter);
   const dispatch = useDispatch();
 
   const onFilterChange = evt => dispatch(setNameFilter(evt.currentTarget.value)); 
